@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Subscriber</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 650px;
+            padding: 20px;
+            text-align: center; 
+        }
+
+        /* Logo Center */
+        .container img {
+            display: block;
+            max-width: 180px;
+            height: auto;
+            margin: 0 auto 15px auto;
+        }
+
+        .container h1 {
+            color: #1a1a1a;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .container hr {
+            border: none;
+            height: 2px;
+            background-color: #cbd5e1;
+            margin: 20px 0;
+        }
+
+        .container h3 {
+            color: #334155;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .container ul {
+            list-style-type: none;
+            text-align: left;
+        }
+
+        .container li {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            padding: 14px 16px 14px 24px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #334155;
+            line-height: 1.5;
+        }
+
+        .container em {
+            font-style: normal;
+            font-weight: bold;
+            color: #0284c7;
+            background-color: #e0f2fe;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.almabetter.com/_next/image?url=https%3A%2F%2Falmablog-media.s3.ap-south-1.amazonaws.com%2Fimage_19400_1_5042248765.png&w=256&q=75" alt="logo">
+        <h1>Get YouTube subscribers</h1>
+        <hr>
+        <h3>The APIs provided by this application include the following:</h3>
+        <ul>
+            <li><strong>GET</strong> <em>/subscribers</em>: Returns Json data array of all subscribers in the database.</li>
+            <li><strong>GET</strong> <em>/subscribers/names</em>: Returns Json data array of subscribers with only two fields name and subscribedChannel</li>
+            <li><strong>GET</strong> <em>/subscribers/:id</em>: Returns the details of a subscriber with the given ID.</li>
+            <li>If ":id" in <em>/subscribers/:id</em>not found in database, it returns an error message with a status code of 400.</li>
+        </ul>
+    </div>
+</body>
+</html>
