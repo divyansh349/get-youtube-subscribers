@@ -29,7 +29,7 @@ app.use(async (req, res, next) => {
 
         next();
     } catch (error) {
-        console.error('MongoDB connection error:', error.message);
+        console.error('MongoDB connection failed. Check DATABASE_URL and Atlas settings.');
         res.status(500).json({
             message: 'Database connection failed'
         });
